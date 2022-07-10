@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <Banner/>
-      <TextField/>
+      <TextField label="Name" placeholder="Type your name"/>
+      <TextField label="Role" placeholder="Type your role"/>
+      <TextField label="Name" placeholder="Type your name"/>
     </div>
   );
 }
