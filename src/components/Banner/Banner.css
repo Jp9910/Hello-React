@@ -4,5 +4,6 @@
 }
 
 .banner img {
+    /*The image size scales to the window size. So even with small window sizes, the image is still 100% visible*/
     max-width: 100%;
 }
