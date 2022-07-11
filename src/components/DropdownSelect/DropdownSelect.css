@@ -1,0 +1,19 @@
+.Dropdown-Select {
+    margin: /*top&bottom:*/ 24px /*sides:*/ 0;
+}
+
+.Dropdown-Select label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.Dropdown-Select select {
+    background-color: #FFF;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.20);
+    width: 100%; /*What will limit the size of this field is its parent*/
+    border: none;
+    font-size: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+}
