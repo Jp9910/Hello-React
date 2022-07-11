@@ -1,9 +1,9 @@
 .banner {
-    background-color: #6278F7;
+    background-color: #173029;
     text-align: center;
 }
 
 .banner img {
     /*The image size scales to the window size. So even with small window sizes, the image is still 100% visible*/
-    max-width: 100%;
+    max-width: 60%;
 }

@@ -14,7 +14,7 @@ const Form = (props) => {
     return (
         <section className="Form">
             <form onSubmit={submit}>
-                <h2>Preencha os dados para criar o card do jogador</h2>
+                <h2>Fill in the data to create your player card.</h2>
                 <TextField label="Name" placeholder="Type your name" required={true} />
                 <TextField label="Role" placeholder="Type your role" required={true} />
                 <TextField label="Image" placeholder="Type the path to your image" required={false} />
