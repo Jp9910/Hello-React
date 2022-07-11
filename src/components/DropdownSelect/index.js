@@ -5,7 +5,7 @@ const DropdownSelect = (props) => {
     return (
         <div className="Dropdown-Select">
             <label>{props.label}</label>
-            <select>
+            <select required={props.required}>
                 {props.items.map((item,index) => {
                     return <option key={index}>{item}</option>
                 })}
