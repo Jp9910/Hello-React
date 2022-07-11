@@ -1,5 +1,5 @@
 import Button from "../Button/Button"
-import DropdownSelect from "../DropdownSelect"
+import DropdownSelect from "../DropdownSelect/DropdownSelect"
 import TextField from "../TextField"
 import "./Form.css"
 
