@@ -16,11 +16,17 @@ const Form = (props) => {
     ] = useState("")
     const [roleReadOnlyState, setRoleState] = useState("")
     const [imageReadOnlyState, setImageState] = useState("")
-    const [teamReadOnlyState, setTeamState] = useState("")
+    const [teamReadOnlyState, setTeamState] = useState("TSM") // Set TSM as initial value
 
     const submit = (event) => {
         event.preventDefault()
-        console.log("Send form data: " , nameReadOnlyState, roleReadOnlyState, imageReadOnlyState, teamReadOnlyState)
+        console.log("Sent form data: " , nameReadOnlyState, roleReadOnlyState, imageReadOnlyState, teamReadOnlyState)
+        props.atPlayerRegistered({ // Send an object containing the form values
+            nameReadOnlyState,
+            roleReadOnlyState,
+            imageReadOnlyState,
+            teamReadOnlyState
+        })
     }
 
     return (
