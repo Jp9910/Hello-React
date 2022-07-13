@@ -9,7 +9,10 @@ const Form = (props) => {
         "TSM", "T1", "ROX"
     ]
 
-    //A hook keeps a state inside a function 
+    // A hook keeps a state inside a function.
+    // Whenever we want the component to react to some change in the value of a variable and
+    // rerender, we need to indicate that using the useState setter. If simply using another
+    // variable, the value will be altered but the DOM won't be updated.
     const [
         nameReadOnlyState, // stateful value (represents the state of the component)
         setNameState // function to update the state of the component
@@ -22,10 +25,10 @@ const Form = (props) => {
         event.preventDefault()
         console.log("Sent form data: " , nameReadOnlyState, roleReadOnlyState, imageReadOnlyState, teamReadOnlyState)
         props.atPlayerRegistered({ // Send an object containing the form values
-            nameReadOnlyState,
-            roleReadOnlyState,
-            imageReadOnlyState,
-            teamReadOnlyState
+            nameReadOnlyState, //this line is equivalent to nameReadOnlyState: nameReadOnlyState
+            role: roleReadOnlyState,
+            imagePath: imageReadOnlyState,
+            team: teamReadOnlyState
         })
     }
 
@@ -45,7 +48,7 @@ const Form = (props) => {
                     placeholder="Type your role"
                     required={true}
                     state={roleReadOnlyState}
-                    setState={setRoleState}
+                    setState={setRoleState} // Is this the same as _setState={state => setRoleState(state)}_ ?
                 />
                 <TextField
                     label="Image"
@@ -62,7 +65,7 @@ const Form = (props) => {
                     setState={setTeamState}
                 />
                 <Button text="Send">
-                    Criar card
+                    Register
                 </Button>
             </form>
         </section>

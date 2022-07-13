@@ -12,7 +12,7 @@ export const TextField =  (props) => {
         //console.log(event.target.value)
 
         props.setState( event.target.value )
-        console.log(props.state)
+        //console.log(props.state)
     }
 
     // Setting the _value_ attribute in the following component will hard-code it in the component.
