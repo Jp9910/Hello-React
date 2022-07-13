@@ -32,7 +32,7 @@ const Form = (props) => {
                     placeholder="Type your name"
                     required={true}
                     state={nameReadOnlyState}
-                    setState={setNameState}
+                    setState={state => setNameState(state)}
                 />
                 <TextField
                     label="Role"
