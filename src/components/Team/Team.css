@@ -1,0 +1,16 @@
+/*
+    @NOTE: O css importado vale para toda a aplicação, e não apenas para o componente.
+            Então um seletor genérico poderia afetar outros componentes.
+*/
+
+.team {
+    text-align: center;
+    background-color: #d9f7e9;
+    padding: 32px;
+}
+
+.team h3 {
+    font-size: 32px;
+    border-bottom: 4px solid #57c278;
+    display: inline-block;
+}
