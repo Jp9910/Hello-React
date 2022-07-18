@@ -13,6 +13,7 @@ function App() {
   const [players, setPlayers] = useState([])
 
   const newPlayerRegistered = (newPlayer) => {
+    //debugger // Just 'debugger' is enough for debugging (try with debugger tab open (f12)).
     console.log("New player registered:" + JSON.stringify(newPlayer))
     setPlayers([...players, newPlayer])
     console.log("Players registered:" + JSON.stringify(players, null, 4))
