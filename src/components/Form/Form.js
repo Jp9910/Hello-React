@@ -16,7 +16,7 @@ const Form = (props) => {
     ] = useState("")
     const [roleReadOnlyState, setRoleState] = useState("")
     const [imageReadOnlyState, setImageState] = useState("")
-    const [teamReadOnlyState, setTeamState] = useState("DRX") // Set TSM as initial value
+    const [teamReadOnlyState, setTeamState] = useState("") // Set TSM as initial value
 
     const submit = (event) => {
         event.preventDefault()
