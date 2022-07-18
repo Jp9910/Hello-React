@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Banner from './components/Banner/Banner.js'; //".js" (or any file extension) is optional
+import Footer from './components/Footer/Footer.js';
 import Form from './components/Form/Form';
 import Team from './components/Team/Team';
 
@@ -36,6 +37,7 @@ function App() {
                   players={players.filter(player => player.team === element.name)}
                 />
       )}
+      <Footer/>
       {/* These 4 next lines are equivalent: */}
       {/*teams.map(function(element,index){return <Team name="123" />})*/}
       {/*teams.map((element) => {return <Team name="123"/>})*/}
