@@ -1,15 +1,18 @@
 import './PlayerCard.css'
 
-const PlayerCard = () => {
+// Another way to get the properties is to use the javascript 'de-structure' operator, which 
+// will split the main object into multiple singular variables.
+const PlayerCard = ({name, role, image}) => {
+    console.log(name,role,image)
     return (
         <div>
             <div>
-                <img src="https://github.com/jp9910.png" alt="João Paulo"/>
+                <img src={image} alt={name}/>
             </div>
 
             <div>
-                <h4>João Paulo</h4>
-                <h5>Estudante</h5>
+                <h4>{name}</h4>
+                <h5>{role}</h5>
             </div>
         </div>
     )
