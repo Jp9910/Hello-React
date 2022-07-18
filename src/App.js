@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <Banner/>
-      <Form atPlayerRegistered={newPlayer => newPlayerRegistered(newPlayer)} teams={teams}/>
+      <Form atPlayerRegistered={newPlayer => newPlayerRegistered(newPlayer)} teamNames={teams.map(element => element.nome)}/>
       {/* These 4 next lines are equivalent: */}
       {teams.map(function(element,index){return <Team key={index} name={element.nome} cor1={element.cor1} cor2={element.cor2} />})}
       {/*teams.map((element) => {return <Team name="123"/>})*/}

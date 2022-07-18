@@ -5,9 +5,6 @@ import TextField from "../TextField"
 import "./Form.css"
 
 const Form = (props) => {
-    const teams = [
-        "TSM", "T1", "ROX"
-    ]
 
     // A hook keeps a state inside a function.
     // Whenever we want the component to react to some change in the value of a variable and
@@ -59,7 +56,7 @@ const Form = (props) => {
                 />
                 <DropdownSelect
                     label="Team"
-                    items={teams}
+                    items={props.teamNames}
                     required={true}
                     state={teamReadOnlyState}
                     setState={setTeamState}
