@@ -14,6 +14,8 @@ const Team = (props) => {
             <div className="players">
                 {props.players.map(player => 
                                     <PlayerCard
+                                        key={player.name}
+                                        bgColor={props.cor1}
                                         name={player.name}
                                         role={player.role}
                                         image={player.imageLink}
