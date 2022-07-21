@@ -1,9 +1,17 @@
 # League of legends team maker
 
+Front-end web page made with React.js and Javascript.
+
+## Banner
 ![Banner](/Docs/Images/banner.png "Banner")
+
+## Form
 ![Form](/Docs/Images/form.png "Form")
-![Team1](/Docs/Images/drx.png "DRX")
-![Team2](/Docs/Images/t1.png "T1")
+
+## Teams registered
+![DRX](/Docs/Images/drx.png "DRX")
+
+![T1](/Docs/Images/t1.png "T1")
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
