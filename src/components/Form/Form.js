@@ -39,22 +39,22 @@ const Form = (props) => {
             <form onSubmit={submit}>
                 <h2>Fill in the data to create your player card.</h2>
                 <TextField 
-                    label="Name"
-                    placeholder="Type your name"
+                    label="Champion"
+                    placeholder="Type the champion name"
                     required={true}
                     state={nameReadOnlyState}
                     setState={state => setNameState(state)}
                 />
                 <TextField
                     label="Role"
-                    placeholder="Type your role"
+                    placeholder="Type the champion role"
                     required={true}
                     state={roleReadOnlyState}
                     setState={setRoleState} // Is this the same as _setState={state => setRoleState(state)}_ ?
                 />
                 <TextField
                     label="Image"
-                    placeholder="Type the path to your image"
+                    placeholder="Find a link with the champion image"
                     required={false}
                     state={imageReadOnlyState}
                     setState={setImageState} 
