@@ -33,3 +33,15 @@
     font-size: 14px;
     line-height: 22px;
 }
+
+.player .player-footer button {
+    background-color: #f24c4e;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    margin: 16px 0px;
+}

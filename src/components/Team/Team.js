@@ -16,9 +16,11 @@ const Team = (props) => {
                                     <PlayerCard
                                         key={player.name}
                                         bgColor={props.cor1}
+                                        id={player.id}
                                         name={player.name}
                                         role={player.role}
                                         image={player.imageLink}
+                                        atChampionRemoved={champion => props.atChampionRemoved(champion)}
                                     />
                                 )
                 }

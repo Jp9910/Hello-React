@@ -17,6 +17,7 @@ const Form = (props) => {
     const [roleReadOnlyState, setRoleState] = useState("")
     const [imageReadOnlyState, setImageState] = useState("")
     const [teamReadOnlyState, setTeamState] = useState("") // Set TSM as initial value
+    const [id, setId] = useState(1)
 
     const submit = (event) => {
         event.preventDefault()
@@ -26,8 +27,10 @@ const Form = (props) => {
             name: nameReadOnlyState,
             role: roleReadOnlyState,
             imageLink: imageReadOnlyState,
-            team: teamReadOnlyState
+            team: teamReadOnlyState,
+            id: id
         })
+        setId(id+1)
         // Clear the form fields after insertion
         setNameState('')
         setRoleState('')
@@ -37,7 +40,7 @@ const Form = (props) => {
     return (
         <section className="Form">
             <form onSubmit={submit}>
-                <h2>Fill in the data to create your player card.</h2>
+                <h2>Fill in the data to create your champion card.</h2>
                 <TextField 
                     label="Champion"
                     placeholder="Type the champion name"

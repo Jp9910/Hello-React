@@ -18,6 +18,19 @@ function App() {
     setPlayers([...players, newPlayer])
     console.log("Players registered:" + JSON.stringify(players, null, 4))
   }
+
+  const championRemoved = (id) => {
+    console.log("champion removed:" + JSON.stringify(id))
+    let index = -1;
+    for (let i=0; i < players.length; i++) {
+      if (players[i].id === id) index = i;
+    }
+    let p = [...players]
+    p.splice(index,1)
+    setPlayers(p)
+    console.log("index: "+index)
+    console.log("champions:" + JSON.stringify(players, null, 4))
+  }
   
   const teams = [
     {name:'DRX', cor1: "#57C278", cor2: "#09F7E9"},
@@ -36,6 +49,7 @@ function App() {
                   cor1={element.cor1}
                   cor2={element.cor2}
                   players={players.filter(player => player.team === element.name)}
+                  atChampionRemoved={champion => championRemoved(champion)}
                 />
       )}
       <Footer/>
