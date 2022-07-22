@@ -13,10 +13,11 @@ const Form = (props) => {
     const [
         nameReadOnlyState, // stateful value (represents the state of the component)
         setNameState // function to update the state of the component
-    ] = useState("")
+    ] = useState("") // initial state of the component
+
     const [roleReadOnlyState, setRoleState] = useState("")
     const [imageReadOnlyState, setImageState] = useState("")
-    const [teamReadOnlyState, setTeamState] = useState("") // Set TSM as initial value
+    const [teamReadOnlyState, setTeamState] = useState("")
     const [id, setId] = useState(1)
 
     const submit = (event) => {

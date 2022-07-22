@@ -3,7 +3,7 @@
 Front-end web page made with React.js and Javascript.
 
 ## Banner
-![Banner](/Docs/Images/banner.png "Banner")
+![Banner](/Docs/Images/frontbanner.png "Banner")
 
 ## Form
 ![Form](/Docs/Images/form.png "Form")
